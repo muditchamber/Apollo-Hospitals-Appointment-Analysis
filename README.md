@@ -2,6 +2,13 @@
 
 An end-to-end Python Exploratory Data Analysis (EDA) project focused on understanding appointment behaviour, no-show patterns, patient engagement, revenue performance, and doctor utilisation for Apollo Hospitals.
 
+![Python](https://img.shields.io/badge/Python-3.x-blue)
+![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-green)
+![NumPy](https://img.shields.io/badge/NumPy-Data%20Analysis-blue)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-yellow)
+![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-lightblue)
+
 ## 📌 Project Overview
 
 Apollo Hospitals operates across multiple cities in India through in-clinic consultations, video consultations, and home visits. Patients can book appointments through different channels including the Apollo App, website, call centre, walk-ins, and partner applications.
