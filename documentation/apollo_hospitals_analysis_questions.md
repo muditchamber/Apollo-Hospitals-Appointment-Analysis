@@ -8,7 +8,6 @@ Apollo Hospitals operates across 15 cities in India through a mix of in-clinic c
 
 Two files are provided. The primary file is `apollo_appointments_fact.csv` with 75,000 rows and 52 columns, where each row is one appointment. The supporting file is `apollo_doctors_dim.csv` with 320 rows and 15 columns, where each row is one doctor. Join on `doctor_id` when doctor-level attributes like experience or rating are needed.
 
-**Dataset Link:** [apollo hospitals - Python Project](#)
 
 ---
 
