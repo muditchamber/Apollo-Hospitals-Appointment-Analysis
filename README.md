@@ -1,6 +1,6 @@
 # Apollo Hospitals — Appointment No-Show & Patient Engagement Analysis
 
-An end-to-end Python Exploratory Data Analysis (EDA) project focused on understanding appointment behaviour, no-show patterns, patient engagement, revenue performance, and doctor utilisation for Apollo Hospitals.
+An end-to-end **Python Exploratory Data Analysis (EDA)** project focused on understanding appointment behaviour, no-show patterns, patient engagement, revenue performance, and doctor utilisation for Apollo Hospitals.
 
 ![Python](https://img.shields.io/badge/Python-3.x-blue)
 ![Jupyter Notebook](https://img.shields.io/badge/Jupyter-Notebook-orange)
@@ -9,64 +9,135 @@ An end-to-end Python Exploratory Data Analysis (EDA) project focused on understa
 ![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-yellow)
 ![Seaborn](https://img.shields.io/badge/Seaborn-Visualization-lightblue)
 
+---
+
+## 📑 Table of Contents
+
+- [Project Overview](#-project-overview)
+- [Project Highlights](#-project-highlights)
+- [Business Objectives](#-business-objectives)
+- [Datasets](#-datasets)
+- [Tools & Technologies](#️-tools--technologies)
+- [Project Structure](#-project-structure)
+- [Analysis Areas](#-analysis-areas)
+- [Data Analysis Notes](#️-data-analysis-notes)
+- [Main Notebook](#-main-notebook)
+- [Documentation](#-documentation)
+- [Analysis Scope](#-analysis-scope)
+- [Project Workflow](#-project-workflow)
+- [Project](#-project)
+
+---
+
 ## 📌 Project Overview
 
-Apollo Hospitals operates across multiple cities in India through in-clinic consultations, video consultations, and home visits. Patients can book appointments through different channels including the Apollo App, website, call centre, walk-ins, and partner applications.
+Apollo Hospitals operates across multiple cities in India through in-clinic consultations, video consultations, and home visits.
 
-This project analyses appointment-level data to identify patterns related to:
+Patients can book appointments through multiple channels including:
+
+- Apollo App
+- Website
+- Call Centre
+- Walk-In
+- Partner App
+
+This project analyses appointment-level data to understand:
 
 - Appointment volume and trends
-- Completed, no-show, cancelled, and scheduled appointments
-- Booking channels
+- Appointment outcomes
 - No-show behaviour
-- Booking lead time
-- Appointment types and time slots
+- Booking patterns
+- Patient engagement
 - Revenue performance
 - Doctor utilisation
-- Patient waiting time
-- Patient satisfaction
+- Service quality
 - Reminder effectiveness
-- Patient engagement
+- Patient and demographic segmentation
+
+---
+
+## ⭐ Project Highlights
+
+- **75,000 appointment records** analysed
+- **320 doctors** included in the supporting dimension dataset
+- Appointment outcome analysis
+- No-show behaviour analysis
+- Booking-channel analysis
+- Booking lead-time analysis
+- Revenue and insurance analysis
+- Doctor utilisation analysis
+- Patient waiting-time analysis
+- Consultation and satisfaction analysis
+- Reminder effectiveness analysis
+- Patient engagement analysis
 - Demographic segmentation
+- Structured Python EDA workflow
+
+---
 
 ## 🎯 Business Objectives
 
 The analysis is designed to answer important business questions such as:
 
 - How does appointment volume change across months and quarters?
+- What is the distribution of completed, no-show, cancelled, and scheduled appointments?
 - Which booking channels generate the highest appointment volume?
 - Which specialties and cities have higher or lower no-show rates?
 - How does booking lead time relate to no-show behaviour?
+- Do evening slots and weekends show different attendance patterns?
 - Which appointment types and booking channels have higher no-show risk?
-- How much revenue is associated with completed appointments and no-shows?
+- How does revenue vary across specialties and appointment types?
+- Which cities generate the most revenue?
+- How does insurance coverage affect patient out-of-pocket payments?
+- Which specialties have different doctor utilisation patterns?
+- How does patient waiting time vary?
+- Is consultation duration related to patient satisfaction?
 - How does doctor experience relate to consultation fees?
-- Do reminders influence appointment attendance?
-- Does previous no-show behaviour relate to future attendance?
-- How do membership, repeat visits, age group, gender, and chronic-condition status relate to appointment behaviour?
+- How effective are appointment reminders?
+- Does previous no-show history relate to future attendance?
+- Do members and repeat patients show different attendance patterns?
+- How do age group, gender, and chronic-condition status relate to no-show behaviour?
+
+---
 
 ## 📊 Datasets
 
 ### 1. Appointments Fact Dataset
 
-"apollo_appointments_fact.csv"
+**File:** `apollo_appointments_fact.csv`
 
-- 75,000 rows
-- 52 columns
+- **75,000 rows**
+- **52 columns**
 - One row represents an appointment event.
 
 The dataset contains appointment dates, booking information, patient attributes, appointment outcomes, financial information, reminders, waiting time, consultation duration, satisfaction, and doctor utilisation metrics.
 
 ### 2. Doctors Dimension Dataset
 
-"apollo_doctors_dim.csv"
+**File:** `apollo_doctors_dim.csv`
 
-- 320 rows
-- 15 columns
+- **320 rows**
+- **15 columns**
 - One row represents a doctor.
 
-The doctor dataset contains doctor information such as specialty, qualification, experience, consultation fee, rating, reviews, availability, insurance acceptance, and teleconsultation availability.
+The dataset contains doctor information such as:
 
-The two datasets can be joined using "doctor_id".
+- Doctor name
+- Specialty
+- Qualification
+- Experience
+- City
+- Hospital
+- Consultation fee
+- Rating
+- Total reviews
+- Availability
+- Insurance acceptance
+- Teleconsultation availability
+
+The datasets can be joined using `doctor_id`.
+
+---
 
 ## 🛠️ Tools & Technologies
 
@@ -81,6 +152,8 @@ The two datasets can be joined using "doctor_id".
 - Data Transformation
 - Data Visualization
 - Business Analysis
+
+---
 
 ## 📁 Project Structure
 
@@ -100,58 +173,149 @@ apollo-hospitals-appointment-analysis/
 │
 └── 📄 README.md
 ```
+
+---
+
 ## 🔍 Analysis Areas
 
-### Business Overview
+### 📊 Business Overview
 
-Appointment trends, appointment outcomes, and booking-channel distribution.
+- Appointment volume trends across months and quarters
+- Appointment outcome distribution
+- Booking-channel analysis
 
-### No-Show Analysis
+### 🚫 No-Show Analysis
 
-No-show behaviour across specialties, cities, booking lead time, time of day, appointment types, and booking channels.
+- No-show rates across specialties and cities
+- Booking lead-time analysis
+- Time-of-day analysis
+- Weekend appointment behaviour
+- Appointment-type analysis
+- Booking-channel patterns
 
-### Financial Performance
+### 💰 Financial Performance
 
-Revenue, consultation fees, insurance coverage, patient out-of-pocket payments, and payment modes.
+- Revenue analysis
+- Consultation fee analysis
+- Insurance coverage
+- Patient out-of-pocket payments
+- Payment-mode analysis
 
-### Doctor Utilisation & Service Quality
+### 👨‍⚕️ Doctor Utilisation & Service Quality
 
-Doctor utilisation, patient waiting time, consultation duration, satisfaction, and doctor experience.
+- Doctor utilisation
+- Patient waiting time
+- Consultation duration
+- Patient satisfaction
+- Doctor experience
+- Consultation fees
 
-### Reminder & Patient Engagement
+### 🔔 Reminder & Patient Engagement
 
-Reminder effectiveness, previous no-show history, Apollo membership, and repeat-patient behaviour.
+- Reminder effectiveness
+- Previous no-show behaviour
+- Apollo membership
+- Repeat-patient behaviour
 
-### Patient & Demographic Segmentation
+### 👥 Patient & Demographic Segmentation
 
-Age groups, gender, chronic-condition status, visit reasons, and specialty-level patient demographics.
+- Age-group analysis
+- Gender analysis
+- Chronic-condition status
+- Visit reasons
+- Specialty-level demographic patterns
+
+---
 
 ## ⚠️ Data Analysis Notes
 
 For accurate analysis:
 
-- Quality metrics such as waiting time, satisfaction, consultation duration, and doctor utilisation should be analysed for Completed appointments.
-- Revenue-related analysis should focus on Completed appointments.
-- No-show rate should exclude Scheduled appointments from the denominator.
-- The value "None" in fields such as chronic condition, membership type, insurance provider, and cancellation reason represents a non-applicable value rather than a missing value.
+- Quality metrics such as **wait time, satisfaction, consultation duration, and doctor utilisation** should be analysed only for **Completed** appointments.
+- Revenue-related analysis should focus on **Completed** appointments.
+- For **no-show rate**, Scheduled appointments should be excluded from the denominator.
+- The value `None` in fields such as chronic condition, membership type, insurance provider, and cancellation reason represents a **non-applicable value**, not a missing value.
+
+---
 
 ## 📓 Main Notebook
 
-The complete structured analysis is available in:
+The complete structured analysis is available in the main professional Jupyter Notebook.
 
-"notebooks/apollo_hospital_professional.ipynb"
+👉 [Open Professional Analysis Notebook](notebooks/apollo_hospital_professional.ipynb)
 
-The notebook contains the project analysis in a structured format along with the business questions being investigated.
+The notebook contains the structured Python analysis along with the business questions being investigated.
+
+---
 
 ## 📚 Documentation
 
-Additional project documentation is available in the "documentation/" folder:
+Additional project documentation is available below:
 
-- Analysis Questions — business questions addressed by the project
-- Data Dictionary — definitions and descriptions of dataset columns
+- 📋 [Analysis Questions](documentation/apollo_hospitals_analysis_questions.md)
+- 📖 [Data Dictionary](documentation/Data%20Dictionary.docx)
+
+---
+
+## 📈 Analysis Scope
+
+| Area | Focus |
+|---|---|
+| Appointment Trends | Monthly and quarterly appointment patterns |
+| No-Show Analysis | Attendance and dropout behaviour |
+| Booking Behaviour | Booking channel and lead-time patterns |
+| Financial Analysis | Revenue, fees and insurance |
+| Doctor Analysis | Utilisation and experience |
+| Service Quality | Waiting time and satisfaction |
+| Engagement | Reminders, membership and repeat visits |
+| Demographics | Age, gender and patient characteristics |
+
+---
+
+## 🚀 Project Workflow
+
+```text
+Data
+  ↓
+Data Understanding
+  ↓
+Data Cleaning
+  ↓
+Data Preparation
+  ↓
+Exploratory Data Analysis
+  ↓
+Statistical & Business Analysis
+  ↓
+Data Visualization
+  ↓
+Business Insights
+```
+
+---
+
+## 📂 Repository Contents
+
+### Dataset
+
+- `apollo_appointments_fact.csv`
+- `apollo_doctors_dim.csv`
+
+### Notebook
+
+- `apollo_hospital_professional.ipynb`
+
+### Documentation
+
+- `apollo_hospitals_analysis_questions.md`
+- `Data Dictionary.docx`
+
+---
 
 ## 👤 Project
 
-### Apollo Hospitals — Appointment No-Show & Patient Engagement Analysis
+**Apollo Hospitals — Appointment No-Show & Patient Engagement Analysis**
 
-Built as a Python-based Data Analytics / Exploratory Data Analysis project.
+Built as a Python-based **Data Analytics / Exploratory Data Analysis** project.
+
+---
